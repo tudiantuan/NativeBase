@@ -18,14 +18,14 @@ import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
 import Zocial from 'react-native-vector-icons/Zocial';
 import { createIconSetFromIcoMoon } from 'react-native-vector-icons';
 
-import icoMoonConfig from './Icon/selection.json';
+import icoMoonConfig from '../basic/Icon/selection.json';
 import mapPropsToStyleNames from '../utils/mapPropsToStyleNames';
 
 const Icomoon = createIconSetFromIcoMoon(icoMoonConfig);
 
 class IconNB extends React.PureComponent {
   static contextTypes = {
-    theme: PropTypes.object,
+    theme: PropTypes.object
   };
 
   constructor(props) {
@@ -40,7 +40,7 @@ class IconNB extends React.PureComponent {
     }
   }
 
-  setRoot(c){
+  setRoot(c) {
     this._root = c;
   }
 
@@ -122,8 +122,8 @@ IconNB.propTypes = {
     'MaterialIcons',
     'Octicons',
     'SimpleLineIcons',
-    'Zocial',
-  ]),
+    'Zocial'
+  ])
 };
 
 const StyledIconNB = connectStyle(
