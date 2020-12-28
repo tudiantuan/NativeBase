@@ -59,8 +59,8 @@ const DefaultTabBar = createReactClass({
     tabFontSize,
     disabled,
     disabledTextColor,
-    accessible,
-    accessibilityLabel
+    // accessible,
+    // accessibilityLabel
   ) {
     const headerContent =
       typeof name !== 'string' ? name.props.children : undefined;
@@ -85,10 +85,10 @@ const DefaultTabBar = createReactClass({
           style={{ flex: 1 }}
           disabled={isDisabled}
           key={name}
-          accessible={accessible}
-          accessibilityRole="tab"
-          accessibilityLabel={accessibilityLabel}
-          accessibilityState={accessibilityState}
+          // accessible={accessible}
+          // accessibilityRole="tab"
+          // accessibilityLabel={accessibilityLabel}
+          // accessibilityState={accessibilityState}
           onPress={() => onPressHandler(page)}
         >
           <TabHeading
@@ -113,10 +113,10 @@ const DefaultTabBar = createReactClass({
         style={{ flex: 1 }}
         disabled={isDisabled}
         key={_.random(1.2, 5.2)}
-        accessible={accessible}
-        accessibilityRole="tab"
-        accessibilityLabel={accessibilityLabel}
-        accessibilityState={accessibilityState}
+        // accessible={accessible}
+        // accessibilityRole="tab"
+        // accessibilityLabel={accessibilityLabel}
+        // accessibilityState={accessibilityState}
         onPress={() => onPressHandler(page)}
       >
         <TabHeading style={tabHeaderStyle} active={isTabActive}>
@@ -168,8 +168,8 @@ const DefaultTabBar = createReactClass({
             variables.tabFontSize,
             this.props.disabled[page],
             this.props.disabledTextColor,
-            this.props.accessible[page],
-            this.props.accessibilityLabel[page]
+            // this.props.accessible[page],
+            // this.props.accessibilityLabel[page]
           );
         })}
         <Animated.View
