@@ -18,7 +18,7 @@ import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
 import Zocial from 'react-native-vector-icons/Zocial';
 import { createIconSetFromIcoMoon } from 'react-native-vector-icons';
 
-import icoMoonConfig from '../basic/Icon/selection.json';
+import icoMoonConfig from './Icon/selection.json';
 import mapPropsToStyleNames from '../utils/mapPropsToStyleNames';
 
 const Icomoon = createIconSetFromIcoMoon(icoMoonConfig);
