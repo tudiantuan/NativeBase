@@ -204,7 +204,6 @@ const ScrollableTabBar = createReactClass({
         </TabHeading>
       </Button>
     );
-    
   },
 
   measureTab(page, event) {
@@ -274,7 +273,7 @@ const ScrollableTabBar = createReactClass({
                 this.props.textStyle[page],
                 this.props.activeTextStyle[page],
                 this.props.tabHeaderStyle[page],
-                this.props.tabFontSize[page]
+                variables.tabFontSize
               );
             })}
             <Animated.View
