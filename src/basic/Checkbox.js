@@ -28,16 +28,15 @@ class CheckBox extends Component {
     };
   }
 
-
-  getBorderRadius(checkboxType, variables) {
-    if (checkboxType == "rounded") {
+  getBorderRadius = (checkboxType, variables) => {
+    if (checkboxType === 'rounded') {
       return 13;
     }
-    if (checkboxType == "square") {
+    if (checkboxType === 'square') {
       return 0;
     }
     return variables.CheckboxRadius;
-  }
+  };
 
   prepareRootProps(variables) {
     const defaultProps = {
